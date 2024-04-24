@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+<body>
+<form method="post" action="practice_fun">
+    {% csrf_token %}
+    Name:<input type="text" name='txtname' value="{{ name }}"><br><br>
+    Age:<input type="number" name="txtage" value="{{ python }}"><br><br>
+    place<input type="number" name="txtplace" value="{{ python }}"><br><br>
+    Marks:<input type="number" name="txtmarks" value="{{ java }}"><br><br>
+    <input type="submit" name="button" value="{{ data }}">
+
+</form>
+</body>
+</html>
